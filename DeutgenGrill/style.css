@@ -1,0 +1,380 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* start navbar*/
+header{
+    background-color: white;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    border: 1px solid black;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s;
+}
+
+.nav-link:hover{
+    color: lightgray;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+        position: fixed;
+        left: -110%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+/* slut navbar*/
+
+
+a:hover{
+    text-decoration: underline;
+}
+.meny{
+    height: 500px;
+    border: 2px solid black;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-image: url(bilder/bak3.png);
+}
+
+/* start på menyer */
+.middag_meny{
+    height: 1000px;
+    border: 1px solid black;
+}
+
+.middag_recept1{
+    height: 350px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.recept1-left{
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 50%;
+    border: 1px solid black;
+}
+.recept1-right{
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+/* slut på menyer */
+
+.grill_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: black;
+    text-decoration: underline;
+}
+
+/* start link till recept*/
+.body_grill{
+    height: 900px;
+}
+
+.recepie_bar{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 30px;
+}
+.link_to{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    background-color: white;
+    background-image: url(bilder/linkbak2.png.jpg);
+    background-size: cover;
+}
+
+.dinner{
+    width: 400px;
+    height: 400px;
+    transition: 0,5s;
+    position: relative;
+}
+
+
+.dinner_logo{
+    height: 80px;
+    background-color: bisque;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.dinner_foto {
+    position: relative;
+    height: 320px;
+    background-image: url(bilder/middag.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.dinner_foto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Bakgrundsfärg med 50% opacity */
+    opacity: 0; /* Startopacity för bakgrundsbilden */
+    transition: opacity 0.3s; /* Animera övergången för opacity */
+}
+
+.dinner_foto a {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0; /* Startopacity för <a> taggen */
+    transition: opacity 0.3s; /* Animera övergången för opacity */
+}
+
+.dinner_foto:hover::before {
+    opacity: 1; /* Ändra opacity till 1 när du hoverar över .dinner_foto */
+}
+
+.dinner_foto:hover a {
+    opacity: 1; /* Visa <a> taggen när du hoverar över .dinner_foto */
+}
+
+
+
+.sause{
+    width: 400px;
+    height: 400px;
+}
+
+.sause_logo{
+    height: 80px;
+    background-color: bisque;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.sause_foto{
+    position: relative;
+    height: 320px;
+    background-image: url(bilder/sås.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.sause_foto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Bakgrundsfärg med 50% opacity */
+    opacity: 0; /* Startopacity för bakgrundsbilden */
+    transition: opacity 0.3s; /* Animera övergången för opacity */
+}
+
+.sause_foto a {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0; /* Startopacity för <a> taggen */
+    transition: opacity 0.3s; /* Animera övergången för opacity */
+}
+
+.sause_foto:hover::before {
+    opacity: 1; /* Ändra opacity till 1 när du hoverar över .dinner_foto */
+}
+
+.sause_foto:hover a {
+    opacity: 1; /* Visa <a> taggen när du hoverar över .dinner_foto */
+}
+
+
+.why_not{
+    width: 400px;
+    height: 400px;
+   
+}
+
+.why_notlogo{
+    height: 80px;
+    background-color: bisque;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.why_notfoto{
+    position: relative;
+    height: 320px;
+    background-image: url(bilder/why_not.png.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.why_notfoto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Bakgrundsfärg med 50% opacity */
+    opacity: 0; /* Startopacity för bakgrundsbilden */
+    transition: opacity 0.3s; /* Animera övergången för opacity */
+}
+
+.why_notfoto a {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0; /* Startopacity för <a> taggen */
+    transition: opacity 0.3s; /* Animera övergången för opacity */
+}
+
+.why_notfoto:hover::before {
+    opacity: 1; /* Ändra opacity till 1 när du hoverar över .dinner_foto */
+}
+
+.why_notfoto:hover a {
+    opacity: 1; /* Visa <a> taggen när du hoverar över .dinner_foto */
+}
+
+/* slut link till recept*/
+
+/* start funktion för mobil*/
+@media (max-width: 768px) {
+    .link_to {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .dinner,
+    .sause,
+    .why_not {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .dinner_foto,
+    .sause_foto,
+    .why_notfoto {
+        height: 200px;
+    }
+}
+
+/* slut funktion för mobil*/

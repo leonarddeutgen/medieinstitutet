@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+/* start på sida*/
+.container{
+    height: 1000px;
+    border: 1px solid black;
+}
+.header{
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.body{
+    height: 900px;
+    border: 1px solid black;
+}
+/* slut på sida*/
+
+/* start på länkar*/
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: brown;
+}
+/* slut på länkar*/
+
+/* start på listor*/
+.list{
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.list_title{
+    border-bottom: 1px solid black;
+    height: 20px;
+}
+.ul_list{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 50px;
+}
+.ol_list{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+.dl_list{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 50px;
+}
+/* slut på listor*/
+
+
+
+.checkbox{
+    height: 300px;
+    border: 1px solid black;
+    
+}
+
+.forms{
+    height: 300px;
+    border: 1px solid black;
+}
