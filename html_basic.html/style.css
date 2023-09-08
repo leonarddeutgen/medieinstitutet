@@ -3,7 +3,7 @@ body{
 }
 /* start på sida*/
 .container{
-    height: 1000px;
+    height: 2000px;
     border: 1px solid black;
 }
 .header{
@@ -29,14 +29,15 @@ a:hover{
 /* slut på länkar*/
 
 /* start på listor*/
+
+
 .list{
     height: 300px;
     border: 1px solid black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-
 }
 .list_title{
     border-bottom: 1px solid black;
@@ -46,32 +47,90 @@ a:hover{
     width: 100px;
     height: 200px;
     border: 1px solid black;
-    margin: 50px;
 }
 .ol_list{
     width: 100px;
     height: 200px;
     border: 1px solid black;
-    margin: 50px;
 }
 
 .dl_list{
     width: 100px;
     height: 200px;
     border: 1px solid black;
-    margin: 50px;
 }
 /* slut på listor*/
 
 
 
-.checkbox{
-    height: 300px;
+
+/* start på forms*/
+
+.form_title{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.forms{
+    height: 500px;
     border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textbox_div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.checkbox_div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
-.forms{
-    height: 300px;
+.radio_div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.select_div{
+    width: 100px;
+    height: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textarea_div{
+    width: 100px;
+    height: 100px;
+    
+}
+
+/* Slut på forms*/
+
+.example{
+    height: 500px;
+    border: 1px solid black;
+}
+
+
+
+
+.footer{
+    height: 500px;
     border: 1px solid black;
 }
