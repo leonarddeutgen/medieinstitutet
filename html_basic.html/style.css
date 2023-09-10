@@ -30,7 +30,6 @@ a:hover{
 
 /* start på listor*/
 
-
 .list{
     height: 300px;
     border: 1px solid black;
@@ -82,7 +81,6 @@ a:hover{
 .textbox_div{
     width: 100px;
     height: 100px;
-    border: 1px solid black;
 
     display: flex;
     flex-direction: column;
@@ -92,7 +90,6 @@ a:hover{
 .checkbox_div{
     width: 100px;
     height: 100px;
-    border: 1px solid black; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +99,6 @@ a:hover{
 .radio_div{
     width: 100px;
     height: 100px;
-    border: 1px solid black;
 }
 
 .select_div{
@@ -125,9 +121,19 @@ a:hover{
 .example{
     height: 500px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.example_mid{
+    width: 500px;
+    height: 300px;    
+}
+.example_top{
+    display: flex;
+    justify-content: center;
+}
 
 
 .footer{
