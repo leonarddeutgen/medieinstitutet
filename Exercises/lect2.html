@@ -10,6 +10,11 @@ Main structure:
 -->
 
 <html lang="en">
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Philippe Martinet">
@@ -26,6 +31,9 @@ Main structure:
                 <li><a href="#lists">Lists</a></li>
                 <li><a href="#def lists">Definitions lists</a></li>
                 <li><a href="#images">Images</a></li>
+                <li><a href="#Exercises">Exercises</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#audio">Audio</a></li>
             </ul>
         </nav>
         <h1>Hello World!</h1>  <!-- One h1 per page -->
@@ -194,6 +202,149 @@ Main structure:
 <figcaption>Lite stenar.</figcaption>
 </figure>
 </section>
+
+
+
+<section id="Exercises">
+<h2>Exercises</h2>
+<ol>
+    <li>Find a bitmap picture on the web</li>
+    <li>Add a width and bold text on the picture using tranparency</li>
+    <li>Add final image inside HTML document</li>
+</ol>
+</section>
+
+<h2>Loading attribute in img</h2>
+<img src="img/test_2_export.png" alt="te" loading="lazy">
+
+
+<section id="video">
+<h2>Video</h2>
+<video src="Video/flower.webm" controls></video>
+</section>
+
+
+<section id="audio">
+<h2>Audio</h2>
+<figure>
+    <figcaption>Lyssna</figcaption>
+<audio controls src="Audio/brain-damage-148577.mp3">
+    <a href="https://pixabay.com/sound-effects/" download="https://pixabay.com/sound-effects/">Download Audio</a>
+</audio>
+</figure>
+</section>
+
+<section id="table">
+<h2>Tables</h2>
+
+<table>
+
+    <tr>
+    <th>Name</th><th>Result</th>
+</tr>
+<tr>
+    <td>Philippe</td><td>10</td>
+</tr>
+<tr>
+    <td>Marc</td><td>8</td>
+</tr>
+<tr>
+    <td>Anna</td><td>9</td>
+</tr>
+<tr>
+    <td>Eva</td><td>12</td>
+</tr>
+</table>
+<br>
+<table>
+    <thead>
+    <tr>
+    <th>Day</th>
+    <th>Temp</th>
+    <th>Mean</th>
+</thead>
+<tbody>
+</tr>
+    <tr>
+        <td>1/9</td> <td>23</td>
+    </tr>
+
+    <tr>
+        <td>2/9</td> <td>27</td>
+    </tr>
+    <tr>
+        <td>3/9</td> <td>25</td>
+    </tr>
+    <tr>
+        <td>4/9</td> <td>30</td> <td>26.25</td>
+    </tr>
+
+</tbody>
+</table>
+</section>
+<br>
+
+<iframe src="https://www.openstreetmap.org/#map=5/59.367/17.095" frameborder="0"></iframe>
+<br><br>
+
+<form action="" method="post">
+<fieldset>
+    <legend>Personal Info</legend>
+    <p>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" placeholder="Namn"
+        autocomplete="on"
+        required
+        autofocus >
+    </p>
+
+    <p>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname"
+        placeholder="Last Name"
+        autocomplete="on"
+        required>
+    </p>
+
+    <p>
+        <label for="pword">Password</label>
+        <input type="password" name="pword" placeholder="Password">
+    </p>
+    <p>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" placeholder="072 000 00 00">
+    </p>
+
+    <p>
+        <input type="radio" name="pc" id="rd1">
+        <label for="rd1">Mac</label>
+        <input type="radio" name="pc" id="rd2">
+        <label for="rd2">Windows</label>
+    </p>
+
+    <p>
+        <input type="checkbox" name="checkbox" id="lb1">
+        <label for="lb1">Java Script</label>
+
+        <input type="checkbox" name="checkbox" id="lb2">
+        <label for="lb2">Python</label>
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend>Your message</legend>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <input type="submit" value="submit" formmethod="post">
+</fieldset>
+
+</form>
+
+
+
+
+
+
+
 <a href="#">Back to top</a>
 
     </body>
