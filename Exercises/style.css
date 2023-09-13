@@ -1,0 +1,262 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*container*/
+.container{
+    height: 3000px;
+}
+/*start header*/
+.header{
+    height: 50px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+ 
+li{
+    display: inline flex;
+    margin: 20px;
+}
+
+
+a{
+    text-decoration-line: none;
+    color: #a6d1c9;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+/*start på opacity för länk i header*/
+@keyframes opacity{
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+.opacity{
+    animation: opacity 7s;
+}
+/* slut på opacity för länk i header*/
+
+/*slut header*/
+
+/* start slide in logo*/
+.slide-in_logo{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid ;
+    background-color: #333;
+}
+
+.btn{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0,5em 1em;
+    color: #a6d1c9;
+    border-radius: 5px;
+    height: 60px;
+    transition: all 0,7s;
+    position: sticky;
+    top: 0;
+}
+
+
+@keyframes slide_in {
+    from{
+        transform: translatey(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+.btn{
+    animation: slide_in 2s ease-in-out;
+}
+/* slut slide in logo*/
+
+/* main content*/
+.main-content{
+    height: 800px;
+    background-color: #333;
+    border-top: 2px solid #a6d1c9;
+
+}
+
+
+/* start på info text main*/
+.info-1-main{
+    width: 50%;
+    height: 300px;
+    font-size: 25px;
+    border-bottom: 1px solid#a6d1c9;
+}
+
+@keyframes info-1-h{
+    from{
+        transform: translatex(1500px);
+
+    }
+
+    to{
+        transform: translateX(0);
+
+    }
+}
+
+.info-1-h{
+    animation: info-1-h 7s ease-in;
+}
+
+.info-1-main:hover{
+    color: #a6d1c9;
+}
+
+@keyframes info-1-p{
+    from{
+        transform: translatex(-1000px);
+
+    }
+
+    to{
+        transform: translateX(0);
+
+    }
+}
+
+.info-1-p{
+    animation: info-1-p 5s;
+}
+
+
+.info-2-main{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end; /* Lägger texten till höger i min info-main 2*/
+    border-bottom: 1px solid#a6d1c9;
+}
+
+.info-2-content{
+    width: 50%;
+    height: 300px;
+    border-bottom: 1px solid#a6d1c9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    animation: info-2-content 7s;
+}
+
+.info-2-content:hover{
+    color: #a6d1c9;
+
+}
+
+@keyframes info-2-content{
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+/* slut på info text main*/
+
+
+/*start video section*/
+
+.video-mid {
+    position: relative;
+    height: 850px;
+    background-color: #333;
+    border-bottom: #a6d1c9;
+}
+
+.video {
+    width: 100%;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #a6d1c9;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+/*slut video section*/
+
+/* start på tenis bollar*/
+
+.tennis{
+    height: 600px;
+    width: 100%;
+    background-color: #333;
+}
+.tennis-bals {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #a6d1c9;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* För att centrera bollarna vertikalt längst ner */
+    overflow: hidden; /* Dölj bollar som faller utanför parent-container */
+}
+
+.bal {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    position: absolute;
+    animation: fall 3s linear infinite;
+}
+
+.bal1 { left: 10%; }
+.bal2 { left: 30%; }
+.bal3 { left: 50%; }
+.bal4 { left: 70%; }
+.bal5 { left: 90%; }
+
+@keyframes fall {
+    0%, 100% {
+        transform: translateY(-400%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
+
+/* slut på tenis bollar*/
+
+.tennis-text{
+    width: 50%;
+    justify-content: right;
+    position: absolute;
+    color: #a6d1c9;
+    position: relative;
+}
