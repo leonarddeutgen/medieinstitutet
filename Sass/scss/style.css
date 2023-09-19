@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*
+Sass = Syntsctically awasome sylesheet
+install SASS extension in VSC called Live Sass Compiler v6.1.1 by Glenn Marks
+SASS is a pre-processing language
+
+First SASS file
+*/
+/* Skapade varialer*/
+/* map-get font-weights*/
+/* map-get färger*/
+/* fontdtyle */
+/* ljus/mörk */
+.main {
+  background-color: lightblue;
+  color: red;
+  /* @include center; /* mitt namn från @mixin*/
+  /* .main pratar med parent */
+}
+.main .section {
+  font-weight: 700;
+}
+.main .p1 {
+  font-weight: 500;
+  /* ärver allt från p2*/
+}
+.main .p2, .main .p1 {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */

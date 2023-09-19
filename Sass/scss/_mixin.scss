@@ -1,0 +1,32 @@
+
+
+/* fontdtyle */
+@mixin fontstyle{
+    font-size: $normalsize;
+    font-family: 'Times New Roman', Times, serif;
+    color: mycolors(grön);
+    font-weight: weight(regular);
+}
+
+
+/* ljus/mörk */
+@mixin theme ($light-theme:true){
+    @if $light_theme{
+        background: lighten($text-color, 100%);
+        color: darken($text-color,100%);
+    }
+}
+
+@mixin hide ($margin-left:true){
+    @if $margin-left{
+        margin-left: 10000px;
+        display: none;
+    }
+}
+
+
+@mixin background( $background: true){
+    @if $background{
+        background-color: mycolors(orang);
+    }
+}

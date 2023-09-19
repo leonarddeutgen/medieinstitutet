@@ -1,0 +1,22 @@
+$text-color:red;
+$size: 2rem;
+$primary-color:green;
+$second-color:lightblue;
+$normalsize: 2rem;
+
+$accent:green;
+$strong-color:red;
+
+/* map-get font-weights*/
+$font-weights: (
+    "regular":400,
+    "medium":500,
+    "bold":700
+);
+
+/* map-get färger*/
+$colors: (
+    "blå": blue,
+    "grön": green,
+    "orang": orange
+);
