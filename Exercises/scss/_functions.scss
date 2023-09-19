@@ -1,0 +1,7 @@
+/* Functions */
+
+/*start weight */
+@function weights ($weight-name){
+    @return map-get($font-weights, $weight-name );
+}
+/*slut weight */

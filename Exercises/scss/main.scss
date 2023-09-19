@@ -1,0 +1,80 @@
+/* start import*/
+@import "./mixin";
+@import "./media";
+@import "./variables";
+/* slut import*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-grid{
+    display: grid;
+    gap: 0.5rem;
+    background-color: $background-color;
+}
+
+
+.grid-article{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem;
+    border: 1px solid $main-color;
+    background-color: $background-color;
+
+}
+
+.grid3{
+    background-image: url(img/code.jpg.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
+}
+
+.grid5{
+    background-image: url(img/coffe.jpg.jpg);
+    background-size: cover;
+    height: 15rem;
+}
+
+.grid6{
+    height: 20rem;
+    background-color: whitesmoke;
+}
+
+.center{
+@include center();
+
+}
+
+.b-color{
+    color: $main-color;
+}
+
+
+
+li{
+    display: inline;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: $background-color;
+
+}
+
+a:hover{
+    color: $main-color;
+    text-decoration: underline;
+    animation: underline 0.5s;
+}
+
+footer{
+    height: 3rem;
+}
+

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* start import*/
+/* Mixin */
+/* Medias */
+@media (min-width: 60em) {
+  .main-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-grid .grid-col-span-2 {
+    grid-column: span 2;
+  }
+  .main-grid .grid-col-span-3 {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 40em) {
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-grid .grid-col-span-2 {
+    grid-column: span 2;
+  }
+}
+/* Variables */
+/*start färger*/
+/*slut färger*/
+/*start font weight*/
+/* slut import*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-grid {
+  display: grid;
+  gap: 0.5rem;
+  background-color: #333;
+}
+
+.grid-article {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem;
+  border: 1px solid orangered;
+  background-color: #333;
+}
+
+.grid3 {
+  background-image: url(img/code.jpg.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 2rem;
+}
+
+.grid5 {
+  background-image: url(img/coffe.jpg.jpg);
+  background-size: cover;
+  height: 15rem;
+}
+
+.grid6 {
+  height: 20rem;
+  background-color: whitesmoke;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-color {
+  color: orangered;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+  animation: underline 0.5s;
+}
+
+footer {
+  height: 3rem;
+}/*# sourceMappingURL=main.css.map */
