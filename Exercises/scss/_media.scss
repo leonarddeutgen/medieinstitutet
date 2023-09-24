@@ -2,20 +2,5 @@
 @media (min-width: 60em){
     .main-grid{
         grid-template-columns: repeat(4,1fr);
-        .grid-col-span-2{
-            grid-column: span 2;
-        }
-        .grid-col-span-3{
-            grid-column: span 3;
-        }
-    }
-}
-
-@media (min-width: 40em){
-    .main-grid{
-        grid-template-columns: repeat(2,1fr);
-        .grid-col-span-2{
-            grid-column: span 2;
-        }
     }
 }

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+@mixin p2(){
+    max-width: 200px;
+}
+
+@media (max-width: 800px){
+    .main{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 600px){
+    .p2{
+        @include p2();
+    }
+}

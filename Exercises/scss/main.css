@@ -6,20 +6,6 @@
   .main-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  .main-grid .grid-col-span-2 {
-    grid-column: span 2;
-  }
-  .main-grid .grid-col-span-3 {
-    grid-column: span 3;
-  }
-}
-@media (min-width: 40em) {
-  .main-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .main-grid .grid-col-span-2 {
-    grid-column: span 2;
-  }
 }
 /* Variables */
 /*start färger*/
@@ -35,7 +21,6 @@
 .main-grid {
   display: grid;
   gap: 0.5rem;
-  background-color: #333;
 }
 
 .grid-article {
@@ -43,25 +28,6 @@
   border-radius: 0.5rem;
   box-shadow: 2.5rem;
   border: 1px solid orangered;
-  background-color: #333;
-}
-
-.grid3 {
-  background-image: url(img/code.jpg.jpg);
-  background-size: cover;
-  color: white;
-  font-size: 2rem;
-}
-
-.grid5 {
-  background-image: url(img/coffe.jpg.jpg);
-  background-size: cover;
-  height: 15rem;
-}
-
-.grid6 {
-  height: 20rem;
-  background-color: whitesmoke;
 }
 
 .center {
@@ -92,4 +58,12 @@ a:hover {
 
 footer {
   height: 3rem;
+}
+
+.grid-article:nth-child(1) {
+  background-color: green;
+}
+
+body {
+  background-color: green;
 }/*# sourceMappingURL=main.css.map */

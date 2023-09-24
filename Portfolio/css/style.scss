@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto+Slab&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Patua+One&family=Roboto+Slab&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Oswald:wght@200;400&family=Patua+One&family=Roboto+Slab&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Gloock&family=Oswald:wght@200;400&family=Patua+One&family=Roboto+Slab&family=Sofia&display=swap');
+/* start main grid */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-grid{
+    display: grid;
+    gap: 0.5rem;
+}
+
+.font-box{
+    border: 1px solid black;
+}
+
+@media (min-width:600px){
+    .main-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* slut main grid */
+
+/* start fonts*/
+.font1{
+    font-family: 'Patua One', cursive;
+}
+
+.font2{
+    font-family: 'Gloock', serif;
+
+}
+.font3{
+    font-family: 'Roboto Slab', serif;
+}
+
+.font4{
+    font-family: 'Croissant One', cursive;
+}
+
+/* slut fonts*/
+
+/* start på index.html */
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-menu-item a{
+    font-size: 1.5rem;
+    color: blue;
+}
+
+
+

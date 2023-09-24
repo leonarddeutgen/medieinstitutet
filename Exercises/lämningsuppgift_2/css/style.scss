@@ -1,0 +1,123 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Gloock&family=Open+Sans&family=Oswald:wght@200;400&family=Patua+One&family=Roboto&family=Roboto+Slab&family=Sofia&display=swap');
+
+
+@mixin font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: map-get($font-weights, smal )
+}
+
+/* start restet*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* end restet*/
+
+
+.header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    display: inline;
+    justify-content: space-evenly;
+    @include font();
+}
+
+a{
+    color: $text-color;
+    text-decoration: none;
+    padding: 10px;
+    @include font();
+    
+}
+
+a:hover{
+    color: $hover-color;
+}
+
+
+
+/* start container */
+.container{
+    border: 1px solid black;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "box2 box2 box2"
+    "box1 box1 box3"
+    "box4 box5 box3";
+
+}
+/* end container */
+
+
+/* start boxes */
+.box:nth-child(1){
+    background-color: $backgound-1;
+    grid-area: box1;
+    color: $text-color;
+    padding: 10px;
+}
+
+.box:nth-child(2){
+    grid-area: box2;
+    padding-top: 1rem;
+
+}
+
+.box:nth-child(3){
+    background-color: $aside-color;
+    color: $text-color;
+    @include font();
+
+    grid-area: box3;
+
+    p::first-letter{
+        font-size: 60px;
+        color: yellow;
+    }
+}
+
+.box:nth-child(4){
+    background-color: green;
+    color: $text-color;
+    writing-mode: vertical-lr;
+    font-size: 20px;
+
+    grid-area: box4;
+}
+
+.box:nth-child(5){
+    background-color: $light;
+    color: $text-color;
+    padding: 10px;
+    grid-area: box5;
+}
+/* end boxes */
+
+
+
+/* start footer */
+.footer{
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    
+
+}
+/* end footer */
+.el{
+    width: 100vw;
+    height: 5rem;
+    background-color: $hd-ft-color;
+}
+

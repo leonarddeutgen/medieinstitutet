@@ -1,0 +1,43 @@
+@use 'sass:math';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@function pxtoem($pixel){
+    @return math.div($pixel,16) + rem;
+}
+
+
+
+@function change-color($bg-color){
+    @if $bg-color == "light"{
+        @return red;
+    }
+    @else{
+        @return blue;
+    }
+}
+
+@function font($font-size){
+    @if $font-size == "regular"{
+        @return 50px;
+    }
+    @else{
+        @return 40px
+    }
+}
+
+
+body{
+    font-weight: 700-200;
+    width: math.div(85.2,12.6);
+    font-size: pxtoem(30);
+    color: change-color(nolight);
+    font-size: font(noregular);
+}
+
+
+

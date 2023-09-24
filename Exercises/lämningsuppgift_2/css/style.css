@@ -1,0 +1,101 @@
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Gloock&family=Open+Sans&family=Oswald:wght@200;400&family=Patua+One&family=Roboto&family=Roboto+Slab&family=Sofia&display=swap");
+/* start restet*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* end restet*/
+.header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: inline;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+  font-weight: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 40px;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* start container */
+.container {
+  border: 1px solid black;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "box2 box2 box2" "box1 box1 box3" "box4 box5 box3";
+}
+
+/* end container */
+/* start boxes */
+.box:nth-child(1) {
+  background-color: blue;
+  grid-area: box1;
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.box:nth-child(2) {
+  grid-area: box2;
+  padding-top: 1rem;
+}
+
+.box:nth-child(3) {
+  background-color: lightblue;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 40px;
+  grid-area: box3;
+}
+.box:nth-child(3) p::first-letter {
+  font-size: 60px;
+  color: yellow;
+}
+
+.box:nth-child(4) {
+  background-color: lightblue;
+  color: white;
+  writing-mode: vertical-lr;
+  grid-area: box4;
+}
+
+.box:nth-child(5) {
+  background-color: rgb(204, 83, 204);
+  color: white;
+  padding: 10px;
+  grid-area: box5;
+}
+
+/* end boxes */
+/* start footer */
+.footer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/* end footer */
+.el {
+  width: 100vw;
+  height: 5rem;
+  background-color: rgb(63, 2, 63);
+}/*# sourceMappingURL=style.css.map */

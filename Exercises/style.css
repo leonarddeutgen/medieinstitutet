@@ -6,29 +6,6 @@
 }
 
 
-@media (min-width: 60em){
-    .main-grid{
-        grid-template-columns: repeat(4,1fr);
-        .grid-col-span-2{
-            grid-column: span 2;
-        }
-        .grid-col-span-3{
-            grid-column: span 3;
-        }
-    }
-}
-
-@media (min-width: 40em){
-    .main-grid{
-        grid-template-columns: repeat(2,1fr);
-        .grid-col-span-2{
-            grid-column: span 2;
-        }
-    }
-}
-
-
-
 
 
 
@@ -36,6 +13,12 @@
     display: grid;
     gap: 0.5rem;
     background-color: #333;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "box2 box2 box2"
+    "box1 box1 box3"
+    "box4 box5 box3"
+    "box4 box5 box3";
 }
 
 
@@ -48,23 +31,36 @@
 
 }
 
-.grid3{
-    background-image: url(img/code.jpg.jpg);
-    background-size: cover;
-    color: white;
-    font-size: 2rem;
+.grid-article:nth-child(1){
+    background-color: blue;
+    grid-area: box1;
 }
 
-.grid5{
-    background-image: url(img/coffe.jpg.jpg);
-    background-size: cover;
-    height: 15rem;
+
+.grid-article:nth-child(2){
+    background-color: yellow;
+    grid-area: box2;
 }
 
-.grid6{
-    height: 20rem;
-    background-color: whitesmoke;
+.grid-article:nth-child(3){
+    background-color: lightblue;
+    grid-area: box3;
 }
+
+.grid-article:nth-child(4){
+    background-color: lightblue;
+    grid-area: box4;
+    height: 400px;
+}
+
+.grid-article:nth-child(5){
+    background-color: purple;
+    grid-area: box5;
+}
+
+
+
+
 
 .center{
     display: flex;
@@ -101,15 +97,3 @@ footer{
     height: 3rem;
 }
 
-
-@keyframes underline{
-    from{
-        text-decoration: underline;
-        opacity: 100%;
-    }
-
-    to{
-        text-decoration: underline;
-        opacity: 50%;
-    }
-}

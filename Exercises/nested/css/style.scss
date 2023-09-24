@@ -1,0 +1,26 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+    .header2{
+        color: blue;
+    }
+
+    .b ~ .a{
+        color: red;
+    }
+
+    #BigL::first-letter{
+        font-size: 64px;
+        color: red;
+    }
+}
+
+
+
+
+
+
+
+
+

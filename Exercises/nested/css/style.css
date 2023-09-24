@@ -1,0 +1,13 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+body .header2 {
+  color: blue;
+}
+body .b ~ .a {
+  color: red;
+}
+body #BigL::first-letter {
+  font-size: 64px;
+  color: red;
+}/*# sourceMappingURL=style.css.map */
