@@ -5,9 +5,11 @@ $text-color:white;
 $light: rgb(204, 83, 204);
 $backgound-1:blue;
 $hover-color:yellow;
+$firstletter-color: yellow;
 
-$font-size: (
-    "regular": 40px,
+$font-weights: (
+    "large": 60px,
+    "regular": 30px,
     "medium": 20px,
     "smal": 10px
 )

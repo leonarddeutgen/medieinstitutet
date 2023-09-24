@@ -1,5 +1,9 @@
+/* start imports*/
 /* variables */
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Gloock&family=Open+Sans&family=Oswald:wght@200;400&family=Patua+One&family=Roboto&family=Roboto+Slab&family=Sofia&display=swap");
+/* import variables*/
+/* import mixin*/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Gloock&family=Open+Sans&family=Oswald:wght@200;400&family=Patua+One&family=Roboto&family=Roboto+Slab&family=Sofia&display=swap"); /* import font*/
+/* end imports*/
 /* start restet*/
 * {
   margin: 0;
@@ -8,6 +12,7 @@
 }
 
 /* end restet*/
+/* start header (with list/links) */
 .header {
   border: 1px solid black;
   display: flex;
@@ -19,21 +24,20 @@ li {
   display: inline;
   justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
-  font-weight: 40px;
+  font-size: 20px;
 }
 
 a {
   color: white;
   text-decoration: none;
   padding: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 40px;
 }
 
 a:hover {
   color: yellow;
 }
 
+/* end header (with list/links) */
 /* start container */
 .container {
   border: 1px solid black;
@@ -49,8 +53,9 @@ a:hover {
   background-color: blue;
   grid-area: box1;
   color: white;
-  font-size: 40px;
   padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
 .box:nth-child(2) {
@@ -62,10 +67,11 @@ a:hover {
   background-color: lightblue;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 40px;
+  font-size: 20px;
   grid-area: box3;
 }
-.box:nth-child(3) p::first-letter {
+
+.box:nth-child(3) p:first-of-type::first-letter {
   font-size: 60px;
   color: yellow;
 }
@@ -74,12 +80,15 @@ a:hover {
   background-color: lightblue;
   color: white;
   writing-mode: vertical-lr;
+  font-size: 30px;
+  padding: 1rem;
   grid-area: box4;
 }
 
 .box:nth-child(5) {
   background-color: rgb(204, 83, 204);
   color: white;
+  font-size: 20px;
   padding: 10px;
   grid-area: box5;
 }
@@ -91,11 +100,16 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: end;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
 /* end footer */
+/* start el class */
 .el {
   width: 100vw;
   height: 5rem;
   background-color: rgb(63, 2, 63);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* end el class *//*# sourceMappingURL=style.css.map */

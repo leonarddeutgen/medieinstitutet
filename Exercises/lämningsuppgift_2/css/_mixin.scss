@@ -1,0 +1,11 @@
+@mixin font{
+    font-family: 'Roboto', sans-serif;
+    font-size: map-get($font-weights, medium )
+}
+
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
