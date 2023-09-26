@@ -1,0 +1,156 @@
+@import 'variables';
+@import 'reset';
+
+
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $navbar-color;
+    padding-top: 20px;
+}
+
+
+body{
+    background-color: $background-color;
+}
+header{
+    height: 40rem;
+    background-image: url("../img/first.jpg");
+    background-size: cover;
+
+}
+
+
+nav{
+    margin: 1rem;
+    background-color: $navbar-color;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+ul li{
+    display: inline;
+    
+}
+
+
+a{
+    color: $navtext-color;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.hero-text{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $navtext-color;
+
+    font-size: map-get($font-size , smal );
+}
+
+
+
+
+/*start grid-main-1*/
+.grid-main-1{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box4"
+    "box5 box5 box5 box5";
+}
+
+.p-text{
+    display: flex;
+    justify-content: end;
+
+    p{
+        padding-right: 1rem;
+        background-color: $navtext-color;
+        color: $dark-color;
+        height: 1rem;
+    }
+}
+
+.box{
+    height: 300px;
+    border: 1px solid black;
+}
+
+.box:nth-child(1){
+    background-image: url("../img/product1.jpg");
+    background-size: cover;
+    grid-area: box1;
+}
+.box:nth-child(2){
+    background-image: url("../img/product1.jpg");
+    background-size: cover;
+    grid-area: box2;
+}
+.box:nth-child(3){
+
+    background-image: url("../img/product1.jpg");
+    background-size: cover;
+    grid-area: box3;
+}
+.box:nth-child(4){
+    background-image: url("../img/product1.jpg");
+    background-size: cover;
+
+
+    grid-area: box4;
+}
+.box:nth-child(5){
+    height: 400px;
+    background-image: url("../img/product2.jpg");
+    background-size: cover;
+    grid-area: box5;
+}
+/*end grid-main-1*/
+
+/*start grid-main-2*/
+
+.box2{
+    height: 200px;
+    border: 1px solid black;
+    background-image: url("../img/product1.jpg");
+    background-size: cover;
+}
+.grid-main-2{
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+
+
+
+}
+
+
+
+
+footer{
+    height: 15rem;
+    background-color: $navbar-color;
+}
