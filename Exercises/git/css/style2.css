@@ -1,0 +1,112 @@
+.container3{
+    height: 900px;
+    border: 2px solid  black;
+    padding: 20px;
+}
+
+
+.positions-container{
+    height: 500px;
+    width: 500px;
+    border:  2px solid blue;
+    position: relative;
+    
+}
+
+.positions{
+    border: 2px solid red;
+    height: 500px;
+
+}
+
+.absolute{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    position: absolute;
+}
+
+.relative{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 2px solid black;
+    position: relative;
+    left: 50px;
+}
+
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: fixed;
+    left: 400px;
+
+}
+
+
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: sticky;
+    left: 70px;
+
+}
+
+
+
+/* Animation/transform */
+
+/* p{
+    font-size: 2rem;
+    transition: font-size 2s;
+
+}
+
+p:active{
+    background-color: blue;
+    font-size: 5rem;
+} */
+
+.heart-container{
+    height: 300px;
+    border: 2px solid black;
+}
+.heart{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+}
+
+
+.heart::before{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    left: -50px;
+}
+
+
+.h2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+}
+
+.h3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+}
+
