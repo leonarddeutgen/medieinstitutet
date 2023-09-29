@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table tr td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+th {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.font1 {
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 3px 3px 3px;
+}
+
+.font2 {
+  font-family: "Croissant One", cursive;
+  text-shadow: 3px 3px 3px;
+}
+
+.font3 {
+  font-family: "Dela Gothic One", cursive;
+}
+
+.font4 {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
