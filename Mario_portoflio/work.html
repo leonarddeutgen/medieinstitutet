@@ -14,13 +14,13 @@
         <!--Navbar menu-->
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#" class="nav-link">Work</a>
+                <a href="#" class="nav-link link-effect">Work</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">About Me</a>
+                <a href="#" class="nav-link link-effect">About Me</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link link-effect">Contact</a>
             </li>
         </ul>
         <div class="hamburger">
@@ -32,12 +32,12 @@
     </header>
 
     <main class="main-work-page">
-        <div class="box-work"> <img src="img/wk1.png" alt="" width="100%"></div>
-        <div class="box-work"><img src="img/wk3.png" alt="" width="100%"></div>
-        <div class="box-work"><img src="img/chrille.png" alt="" width="100%"></div>
-        <div class="box-work"><img src="img/fanny1.png" alt="" width="100%"></div>
-        <div class="box-work"><img src="img/wk2.png" alt="" width="100%"></div>
-        <div class="box-work"><img src="img/adam2.png" alt="" width="100%"></div>
+        <div class="box-work"> <img class="hover-img" src="img/wk1.png" alt="" width="100%"></div>
+        <div class="box-work"><img class="hover-img" src="img/wk3.png" alt="" width="100%"></div>
+        <div class="box-work"><img class="hover-img" src="img/chrille.png" alt="" width="100%"></div>
+        <div class="box-work"><img class="hover-img" src="img/fanny1.png" alt="" width="100%"></div>
+        <div class="box-work"><img class="hover-img" src="img/wk2.png" alt="" width="100%"></div>
+        <div class="box-work"><img class="hover-img" src="img/adam2.png" alt="" width="100%"></div>
         <div class="box-work"></div>
         <div class="box-work"></div>
         <div class="box-work"></div>
@@ -57,5 +57,19 @@
 
     <footer></footer>
     <script src="script.js"></script>
+
+
+    <script type="text/javascript" src="../Mario_portoflio/vanilla-tilt (1).js"></script>
+    <script type="text/javascript">
+        document.querySelectorAll(".hover-img").forEach(function(element) {
+         VanillaTilt.init(element, {
+        max: 25,
+          speed: 400
+       });
+    });
+
+    
+        
+    </script>
 </body>
 </html>

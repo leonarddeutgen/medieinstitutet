@@ -8,7 +8,11 @@
   box-sizing: border-box;
 }
 
-table tr td {
+body {
+  counter-reset: section;
+}
+
+h1 table tr td {
   border: 1px solid black;
   padding: 1rem;
 }
@@ -36,8 +40,24 @@ th {
   font-family: "Sedgwick Ave Display", cursive;
 }
 
-.box {
-  width: 40px;
-  height: 40px;
-  background-color: red;
-}/*# sourceMappingURL=style.css.map */
+/*
+1. counter-reset: mycounter 1;
+2. counter-increment: mycounter -2; Decrement;
+3. content: counter/mycounter);
+
+@for loop with Sass
+
+@for $row from 1 to 10{
+    @warn $row;
+}
+
+1) Write a counter and use it with warning.
+@warn
+
+2) Use afor loop to change the content of 10 paragraphs
+<p></P>
+Result:
+5
+6
+7
+*//*# sourceMappingURL=style.css.map */

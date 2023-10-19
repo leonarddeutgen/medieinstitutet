@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
 body {
     display: flex;
     align-items: center;
@@ -71,10 +73,10 @@ body {
 
 
 .infocontainer{
-	height: 400px;
+	height: 450px;
 	width: 200px;
 	padding:10px;
-	border: 1px solid blue;
+	border: 1px solid red;
 	background-color: #ffffd0;
 
 	display: flex;
@@ -85,5 +87,69 @@ body {
 	justify-content: center; */
 }
 
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.back-timer{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.present{
+    animation: present 30s ease-in;
+}
 
 
+@keyframes present{
+    from{
+        transform: translatex(-800px)
+    }
+
+    to{
+        transform: translatex(0);
+    }
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+ 
+hr{
+    border: 1px solid red;
+    opacity: 40%;
+}
+
+.cd-container{
+    min-height: 100vh;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown{
+display: flex;
+justify-content: space-around;
+text-align: center;
+}
+
+
+.day, .hour, .minute, .second{
+    font-size: 1rem;
+}
+
+p{
+    font-family: 'Mooli', sans-serif;
+}

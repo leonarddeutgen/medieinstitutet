@@ -1,4 +1,5 @@
 @use 'mixin';
+@use "sass:list";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
@@ -16,10 +17,67 @@
     box-sizing:border-box;
 }
 
+/* body{
+    counter-reset: section;
+}
+
+h1{
+    counter-reset: subsection;
+}
+
+h1::before{
+    counter-increment: section;
+    content: "section " counter(section) ". ";
+}
+
+h2::before{
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+} */
+/* @for $i from 5 to 16{
+    body p::before{
+        content: "#{$i}";
+    }
+}
+ */
+/* h1::before{
+    counter-increment: section;
+    content: "section" counter(section) ": ";
+}
+ */
+
+ @function multi($row, $col){
+    @return $row*$col;
+ }
+ 
+ $counters: one, two, three, four, five, six, seven, eight, nine, ten;
+
+ @for $i from 1 to 11{
+    $name:nth($counters, $i);
+    ##{$name} {
+        counter-reset: $name;
+    }
+
+    ##{$name}>td::before {
+        counter-increment: $name $i;
+        content: counter($name);
+    }
+ }
+
+
+@for $row from 1 to 11{
+    for $col from 1 to 11{
+        table tr:nth-child(#{$row}) td:nth-child(#{$col+1})::before{
+            content: '#{multi}($row,$col)}';
+        }
+    }
+}
 
 table tr td{
     border: 1px solid black;
-    padding:1rem
+    padding:1rem;
+    margin: 0 auto;
+
 }
 
 th{
@@ -53,7 +111,31 @@ th{
 
 $size:10px;
 
-.box{
-@include mixin.box(40px,red);
+/*
+1. counter-reset: mycounter 1;
+2. counter-increment: mycounter -2; Decrement;
+3. content: counter/mycounter);
 
+@for loop with Sass
+
+@for $row from 1 to 10{
+    @warn $row;
 }
+
+1) Write a counter and use it with warning.
+@warn
+
+2) Use afor loop to change the content of 10 paragraphs
+<p></P>
+Result:
+5
+6
+7
+*/
+
+
+
+
+
+
+
